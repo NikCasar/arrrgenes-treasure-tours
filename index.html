@@ -11,13 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 <body>
-
-  <header class="masthead grid grid-middle gutter">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to main navigation</a></li>
+  </ul>
+  <header role="banner" class="masthead grid grid-middle gutter">
     <h1 class="logo push-0 unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2">
       <i class="icon i-32 push-r-1-4"><img src="images/logo.svg" alt=""></i>
       <span class="logo-text giga icon-label text-left">Arrrgene’s Treasure Tours</span>
     </h1>
-    <nav class="nav unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2">
+    <nav role="navigation" id="nav" tabindex="0" class="nav unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2">
       <ul class="list-group-inline mega push-0">
         <li><a class="ib gutter-1-4" href="#tours"><span>Tours</span></a></li>
         <li><a class="ib gutter-1-4" href="#ships"><span>Ships</span></a></li>
@@ -26,8 +29,8 @@
     </nav>
   </header>
 
-  <main>
-    <section class="banner embed embed-16by9">
+  <main role="main" id="main" tabindex="0">
+    <section id="tours" tabindex="0" class="banner embed embed-16by9">
       <img class="embed-item" src="images/banner.jpg" alt="">
       <div class="banner-content pin-c w-1 max-length gutter text-center">
         <h2 class="push-1-2">Ahoy, me Hearties!</h2>
@@ -36,7 +39,7 @@
       </section>
     </div>
 
-    <section class="island">
+    <section id="ships" tabindex="0" class="island">
       <div class="card embed embed-golden">
         <div class="card-content pin-c w-1 max-length gutter text-center">
           <i class="icon i-96 push-1-2"><img src="images/ship.svg" alt=""></i>
@@ -48,7 +51,7 @@
     </section>
   </main>
 
-  <footer class="footer micro text-center island-1-2">
+  <footer role="contentinfo" class="footer micro text-center island-1-2">
     <p class="push-0">© Arrrgene’s Treasure Tours</p>
   </footer>
 
